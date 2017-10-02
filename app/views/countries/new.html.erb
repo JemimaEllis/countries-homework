@@ -1,0 +1,24 @@
+<h1>Add new country</h1>
+
+<%= form_for(@countries) do |countries| %>
+
+	<%= token_tag %>
+
+	<%= countries.label :name %>
+	<%= contries.text_field :name %>
+
+	<%= countries.label :population %>
+	<%= contries.text_field :population %>
+
+	<%= countries.label :flag %>
+	<%= contries.text_field :flag %>
+
+	<%= countries.label :language %>
+	<%= contries.text_field :language %>
+
+	<%= countries.label :president %>
+	<%= contries.text_field :president %>
+
+	<%= countries.submit "Save"%>
+
+<% end %>
