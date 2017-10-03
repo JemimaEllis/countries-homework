@@ -1,18 +1,19 @@
 <h1>Countries Index Page</h1>
 
+<a href="/countries/new">New</a>
 
-<%= @countries %>
 
 <% @countries.each do |countries| %>
 	
 	<h2><%=countries.name%></h2>
 	<p><%=countries.population%></p>
-	<p><%=countries.flag%></p>
+	<img><%=countries.flag%></img>
 	<p><%=countries.language%></p>
 	<p><%=countries.president%></p>
 
-	<a href="/movies/<%= countries.id %>">SHOW PAGE</a>
-	<a href="/movies/<%= countries.id %>/edit">Edit PAGE</a>
+	<a href="/countries/<%= countries.id %>">SHOW PAGE</a>
+	<a href="/countries/<%= countries.id %>/edit">Edit PAGE</a>
+	<a href="/countries/<%= countries.id %>/destroy">Delete</a>
 	
 
 <% end %>

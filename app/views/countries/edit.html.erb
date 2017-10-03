@@ -1,17 +1,22 @@
 <h1>Countries Edit</h1>
 
-<%= @countries.title %>
 
 <%= form_for(@countries) do |countries| %>
 
-<%= countries.label :title %>
-<%= countries.text_field :title, class: 'form-control'%>
+<%= countries.label :name %>
+<%= countries.text_field :name, class: 'form-control'%>
 
-<%= countries.label :desc %>
-<%= mcountries.text_field :desc, class: 'form-control'%>
+<%= countries.label :population %>
+<%= countries.text_field :population, class: 'form-control'%>
 
-<%= countries.label :age_r %>
-<%= countries.text_field :age_r, class: 'form-control'%>
+<%= countries.label :flag %>
+<%= countries.text_field :flag, class: 'form-control'%>
+
+<%= countries.label :language %>
+<%= countries.text_field :language, class: 'form-control'%>
+
+<%= countries.label :president %>
+<%= countries.text_field :president, class: 'form-control'%>
 
 <%= countries.submit "Save Changes", class: "countries" %>
 
